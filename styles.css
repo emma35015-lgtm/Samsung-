@@ -217,7 +217,7 @@ em.key { font-style: normal; color: var(--accent); font-weight: 600; }
           mask-image: radial-gradient(120% 100% at 50% 40%, #000 30%, transparent 75%);
 }
 .hero-inner { position: relative; z-index: 2; }
-.hero-logo { width: clamp(220px, 36vw, 420px); margin-bottom: clamp(26px, 5vh, 56px); }
+.hero-logo { width: clamp(300px, 78vw, 520px); margin-bottom: clamp(26px, 5vh, 56px); }
 .hero-logo img { width: 100%; }
 .hero h1 { color: var(--hero-ink); }
 .hero .display .thin { color: color-mix(in srgb, var(--hero-ink) 55%, transparent); }
