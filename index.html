@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="editorial">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Métodos Cuantitativos · Samsung — Investigación de Operaciones</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@200;300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- progress + nav -->
+<div class="nav-progress" id="navProgress"></div>
+<nav class="nav" id="nav">
+  <div class="nav-brand"><span class="dot"></span> MÉTODOS&nbsp;CUANTITATIVOS</div>
+  <div class="nav-links">
+    <a href="#contexto">Contexto</a>
+    <a href="#inventario">Inventario</a>
+    <a href="#transporte">Transporte</a>
+    <a href="#conclusion">Conclusión</a>
+  </div>
+</nav>
+
+<!-- =================== HERO =================== -->
+<header class="hero" id="inicio" data-screen-label="Portada">
+  <div class="hero-grid"></div>
+  <div class="wrap hero-inner">
+    <div class="hero-logo reveal in"><img src="assets/samsung-logo-white.png" alt="Samsung" /></div>
+    <p class="eyebrow no-rule reveal in" style="color:var(--accent-2)">Investigación de Operaciones · Exposición de equipo</p>
+    <h1 class="display reveal in d1" style="margin-top:18px">
+      Optimizar la<br /><span class="thin">cadena de suministro.</span>
+    </h1>
+    <p class="hero-sub reveal in d2">
+      Un recorrido interactivo por los <strong>modelos de inventario</strong> y los
+      <strong>modelos de transporte</strong> aplicados a la operación global de Samsung Electronics.
+    </p>
+    <div class="hero-meta reveal in d3">
+      <div>
+        <span class="mi-label">Asignatura</span>
+        <span class="mi-val">Métodos Cuantitativos</span>
+      </div>
+      <div>
+        <span class="mi-label">Caso de estudio</span>
+        <span class="mi-val">Samsung Electronics</span>
+      </div>
+      <div style="flex:1 1 360px">
+        <span class="mi-label">Equipo</span>
+        <div class="team-list">
+          <span>Hanna Mariana Bermúdez</span>
+          <span>David Cruz de Alba</span>
+          <span>Christian Graciano Sánchez</span>
+          <span>Daniel Ulises Guzmán Zambrano</span>
+          <span>Angel Maximiliano Nava Chávez</span>
+          <span>Ana Sofía Solís Jiménez</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-cue"><span>Desliza</span><span class="line"></span></div>
+</header>
+
+<!-- =================== CONTEXTO =================== -->
+<section class="section-pad" id="contexto" data-screen-label="Contexto">
+  <div class="wrap">
+    <div class="about-grid">
+      <div>
+        <div class="sec-head reveal">
+          <p class="eyebrow">About · Tech company</p>
+          <h2 class="h-section">La competitividad se gana en la operación.</h2>
+        </div>
+        <p class="lead reveal d1">
+          Para una corporación global como <em class="key">Samsung Electronics</em>, la competitividad no
+          solo radica en la innovación de sus dispositivos, sino en la perfección de su
+          <strong>cadena de suministro</strong>.
+        </p>
+        <p class="text-body reveal d1" style="margin-top:20px">
+          Al manejar productos con un ciclo de vida sumamente corto y componentes de altísimo valor
+          tecnológico, el margen de error operativo es prácticamente cero. Es aquí donde la
+          <strong>Investigación de Operaciones</strong> se vuelve una herramienta estratégica, a través de dos pilares.
+        </p>
+        <div class="pillars reveal d2">
+          <div class="pillar">
+            <span class="num">01</span>
+            <div>
+              <h4>Modelos de Inventario</h4>
+              <p class="text-body">Cuánto comprar o producir y cuándo, minimizando los costos de almacenamiento, pedido y faltantes.</p>
+            </div>
+          </div>
+          <div class="pillar">
+            <span class="num">02</span>
+            <div>
+              <h4>Modelos de Transporte</h4>
+              <p class="text-body">Cómo distribuir la producción entre plantas y centros de distribución al menor costo logístico posible.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <figure class="about-figure reveal d1">
+        <img src="assets/galaxy-lineup.jpg" alt="Línea Galaxy S25" />
+        <figcaption>Galaxy S25 Series · Producto de alto valor y ciclo de vida corto</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- =================== TEMA I DIVIDER =================== -->
+<section class="tema-divider" id="inventario" data-screen-label="Tema I — Inventario">
+  <img src="assets/galaxy-camera.jpg" alt="Módulo de cámara Galaxy" />
+  <div class="wrap td-inner">
+    <p class="tema-num reveal in">I</p>
+    <p class="eyebrow reveal in">Tema I</p>
+    <h2 class="h-section reveal in d1" style="max-width:16ch">Modelos de Inventario</h2>
+    <p class="reveal in d2" style="max-width:60ch;color:rgba(255,255,255,.8);font-weight:300;margin-top:18px;font-size:1.1rem;line-height:1.6">
+      Herramientas matemáticas para determinar las cantidades óptimas de compra o producción que
+      <strong style="color:#fff">minimizan los costos</strong> de almacenamiento, preparación de pedidos y faltantes.
+    </p>
+    <div class="chips reveal in d3">
+      <span class="chip"><b>01</b> Compra con déficit</span>
+      <span class="chip"><b>02</b> Compra sin déficit</span>
+      <span class="chip"><b>03</b> Producción con déficit</span>
+      <span class="chip"><b>04</b> Producción sin déficit</span>
+    </div>
+  </div>
+</section>
+
+<!-- =================== PROBLEMAS DE INVENTARIO =================== -->
+<div class="wrap">
+
+  <!-- PROBLEMA 1 — Compra con déficit -->
+  <article class="problem" id="p1" data-screen-label="Problema 1">
+    <div class="prob-head reveal">
+      <span class="prob-tag">MODELO 01</span>
+      <h3 class="h-prob">Modelo de compra <em class="key">con déficit</em></h3>
+    </div>
+    <div class="prob-statement reveal d1">
+      <p>
+        La planta de ensamblaje automatizado de Samsung requiere un suministro continuo de
+        <span class="hl">módulos de lentes para cámaras de 200&nbsp;MP</span>. La demanda anual se estima en
+        <span class="hl">120 000 unidades</span>, con un costo unitario de $45. Cada orden al proveedor
+        internacional cuesta $3 500, y por los delicados sistemas de control ambiental del almacén el
+        costo de almacenar es de $8 por unidad al año.
+      </p>
+      <p>
+        El equipo de Ingeniería Industrial determinó que es factible operar con un
+        <span class="hl">déficit planeado</span>, ya que la línea puede reprogramar turnos cortos de espera.
+        Ese retraso genera un costo por déficit de $20 por unidad al año.
+      </p>
+      <div class="data-row">
+        <div class="data-token"><div class="dt-k">D · demanda</div><div class="dt-v">120 000 <small>u/año</small></div></div>
+        <div class="data-token"><div class="dt-k">C₁ · unitario</div><div class="dt-v">$45</div></div>
+        <div class="data-token"><div class="dt-k">C₂ · ordenar</div><div class="dt-v">$3 500</div></div>
+        <div class="data-token"><div class="dt-k">C₃ · almacenar</div><div class="dt-v">$8 <small>/u·año</small></div></div>
+        <div class="data-token"><div class="dt-k">C₄ · déficit</div><div class="dt-v">$20 <small>/u·año</small></div></div>
+      </div>
+    </div>
+    <div class="lab reveal d1" data-lab="purchaseShortage"></div>
+    <div class="result-card reveal d2">
+      <div class="result-figures">
+        <div class="rf"><div class="rf-k">Q · pedido óptimo</div><div class="rf-v">12 124<span class="u">u</span></div></div>
+        <div class="rf"><div class="rf-k">S · déficit máx.</div><div class="rf-v">3 464<span class="u">u</span></div></div>
+        <div class="rf"><div class="rf-k">Inventario máx.</div><div class="rf-v">8 660<span class="u">u</span></div></div>
+        <div class="rf"><div class="rf-k">Pedidos / año</div><div class="rf-v">10</div></div>
+        <div class="rf"><div class="rf-k">Tiempo entre pedidos</div><div class="rf-v">36<span class="u">días</span></div></div>
+        <div class="rf"><div class="rf-k">Costo total anual</div><div class="rf-v">$5.47<span class="u">M</span></div></div>
+      </div>
+      <div class="interp">
+        <p class="eyebrow">Interpretación</p>
+        <p>
+          La flexibilidad de este modelo permite que, al tolerar un faltante máximo controlado de
+          <b>3 464 unidades</b>, la corporación mitigue el impacto de los altos costos de almacenamiento,
+          asegurando la <b>máxima rentabilidad</b> dentro de la cadena de suministro global.
+        </p>
+      </div>
+    </div>
+  </article>
+
+  <!-- PROBLEMA 2 — Compra sin déficit -->
+  <article class="problem" id="p2" data-screen-label="Problema 2">
+    <div class="prob-head reveal">
+      <span class="prob-tag">MODELO 02</span>
+      <h3 class="h-prob">Modelo de compra <em class="key">sin déficit</em></h3>
+    </div>
+    <div class="prob-statement reveal d1">
+      <p>
+        La planta de pantallas <span class="hl">OLED</span> requiere un suministro constante de
+        <span class="hl">láminas de vidrio ultradelgado</span> para smartphones de gama alta. La demanda anual
+        es de 90 000 unidades, cada lámina cuesta $32, ordenar al proveedor especializado cuesta $2 200, y el
+        almacenamiento en ambiente controlado cuesta $6 por unidad al año.
+      </p>
+      <p>
+        Cualquier interrupción detendría la producción de pantallas, por lo que Samsung estableció una política
+        <span class="hl">sin déficit</span>: no se permiten faltantes ni retrasos.
+      </p>
+      <div class="data-row">
+        <div class="data-token"><div class="dt-k">D · demanda</div><div class="dt-v">90 000 <small>u/año</small></div></div>
+        <div class="data-token"><div class="dt-k">C₁ · unitario</div><div class="dt-v">$32</div></div>
+        <div class="data-token"><div class="dt-k">C₂ · ordenar</div><div class="dt-v">$2 200</div></div>
+        <div class="data-token"><div class="dt-k">C₃ · almacenar</div><div class="dt-v">$6 <small>/u·año</small></div></div>
+      </div>
+    </div>
+    <div class="lab reveal d1" data-lab="purchaseNoShortage"></div>
+    <div class="result-card reveal d2">
+      <div class="result-figures">
+        <div class="rf"><div class="rf-k">Q · pedido óptimo</div><div class="rf-v">8 124<span class="u">u</span></div></div>
+        <div class="rf"><div class="rf-k">Pedidos / año</div><div class="rf-v">11</div></div>
+        <div class="rf"><div class="rf-k">Inventario prom.</div><div class="rf-v">4 062<span class="u">u</span></div></div>
+        <div class="rf"><div class="rf-k">Tiempo entre pedidos</div><div class="rf-v">33<span class="u">días</span></div></div>
+        <div class="rf"><div class="rf-k">Costo total anual</div><div class="rf-v">$2.93<span class="u">M</span></div></div>
+        <div class="rf"><div class="rf-k">Demanda cubierta</div><div class="rf-v">100<span class="u">%</span></div></div>
+      </div>
+      <div class="interp">
+        <p class="eyebrow">Interpretación</p>
+        <p>
+          La mejor política es ordenar <b>8 124 láminas</b> por pedido, <b>11 veces al año</b>, reabasteciendo cada
+          ~33 días. Se evita todo faltante y se satisface la demanda anual con un costo total de
+          <b>$2 928 744.26</b>, optimizando compra, almacenamiento y ordenamiento.
+        </p>
+      </div>
+    </div>
+  </article>
+
+  <!-- PROBLEMA 3 — Producción con déficit -->
+  <article class="problem" id="p3" data-screen-label="Problema 3">
+    <div class="prob-head reveal">
+      <span class="prob-tag">MODELO 03</span>
+      <h3 class="h-prob">Modelo de producción <em class="key">con déficit</em></h3>
+    </div>
+    <div class="prob-statement reveal d1">
+      <p>
+        Una planta produce internamente a una <span class="hl">tasa R</span> mientras consume a la demanda D, de modo
+        que el inventario se acumula gradualmente. Con D = 150 000 u/año y R = 240 000 u/año, la corrida tiene costo de
+        preparación $4 200, costo de almacenar $10 y se admite un déficit con costo de $25 por unidad al año.
+      </p>
+      <div class="data-row">
+        <div class="data-token"><div class="dt-k">D · demanda</div><div class="dt-v">150 000 <small>u/año</small></div></div>
+        <div class="data-token"><div class="dt-k">R · producción</div><div class="dt-v">240 000 <small>u/año</small></div></div>
+        <div class="data-token"><div class="dt-k">C₁ · unitario</div><div class="dt-v">$52</div></div>
+        <div class="data-token"><div class="dt-k">C₂ · preparar</div><div class="dt-v">$4 200</div></div>
+        <div class="data-token"><div class="dt-k">C₃ · almacenar</div><div class="dt-v">$10 <small>/u·año</small></div></div>
+        <div class="data-token"><div class="dt-k">C₄ · déficit</div><div class="dt-v">$25 <small>/u·año</small></div></div>
+      </div>
+    </div>
+    <div class="lab reveal d1" data-lab="prodShortage"></div>
+    <div class="result-card reveal d2">
+      <div class="result-figures">
+        <div class="rf"><div class="rf-k">Q · producción óptima</div><div class="rf-v">21 687<span class="u">u</span></div></div>
+        <div class="rf"><div class="rf-k">S · unidades agotadas</div><div class="rf-v">2 324<span class="u">u</span></div></div>
+        <div class="rf"><div class="rf-k">Inventario máx.</div><div class="rf-v">5 809<span class="u">u</span></div></div>
+        <div class="rf"><div class="rf-k">Tiempo entre pedidos</div><div class="rf-v">72<span class="u">días</span></div></div>
+        <div class="rf"><div class="rf-k">Costo total anual</div><div class="rf-v">$7.86<span class="u">M</span></div></div>
+        <div class="rf"><div class="rf-k">R − D · acumulación</div><div class="rf-v">90 000<span class="u">u/año</span></div></div>
+      </div>
+      <div class="interp">
+        <p class="eyebrow">Interpretación</p>
+        <p>
+          El modelo permite <b>optimizar la gestión de inventarios</b>, reducir costos operativos y mejorar la
+          eficiencia del sistema productivo, contribuyendo a una mejor toma de decisiones dentro de la empresa.
+        </p>
+      </div>
+    </div>
+  </article>
+
+  <!-- PROBLEMA 4 — Producción sin déficit -->
+  <article class="problem" id="p4" data-screen-label="Problema 4">
+    <div class="prob-head reveal">
+      <span class="prob-tag">MODELO 04</span>
+      <h3 class="h-prob">Modelo de producción <em class="key">sin déficit</em></h3>
+    </div>
+    <div class="prob-statement reveal d1">
+      <p>
+        Una planta automatizada fabrica pantallas <span class="hl">AMOLED</span> de gama alta. La demanda anual es de
+        60 000 unidades y la planta produce 90 000 al año. Cada corrida tiene un costo de preparación de $5 280,
+        mantener una pantalla en inventario cuesta $210 al año y fabricar cada una cuesta $55. <span class="hl">No se permiten faltantes.</span>
+      </p>
+      <div class="data-row">
+        <div class="data-token"><div class="dt-k">D · demanda</div><div class="dt-v">60 000 <small>u/año</small></div></div>
+        <div class="data-token"><div class="dt-k">R · producción</div><div class="dt-v">90 000 <small>u/año</small></div></div>
+        <div class="data-token"><div class="dt-k">C₁ · unitario</div><div class="dt-v">$55</div></div>
+        <div class="data-token"><div class="dt-k">C₂ · preparar</div><div class="dt-v">$5 280</div></div>
+        <div class="data-token"><div class="dt-k">C₃ · almacenar</div><div class="dt-v">$210 <small>/u·año</small></div></div>
+      </div>
+    </div>
+    <div class="lab reveal d1" data-lab="prodNoShortage"></div>
+    <div class="result-card reveal d2">
+      <div class="result-figures">
+        <div class="rf"><div class="rf-k">Q · lote óptimo</div><div class="rf-v">3 009<span class="u">u</span></div></div>
+        <div class="rf"><div class="rf-k">Inventario máx.</div><div class="rf-v">1 003<span class="u">u</span></div></div>
+        <div class="rf"><div class="rf-k">Tiempo entre corridas</div><div class="rf-v">18<span class="u">días</span></div></div>
+        <div class="rf"><div class="rf-k">Costo total anual</div><div class="rf-v">$3.51<span class="u">M</span></div></div>
+      </div>
+      <div class="interp">
+        <p class="eyebrow">Interpretación</p>
+        <p>
+          Samsung debe producir ~<b>3 009 pantallas por lote</b> y realizar una corrida cada <b>18 días</b> para
+          satisfacer la demanda sin faltantes, manteniendo un inventario máximo de 1 003 unidades y un costo total de
+          <b>$3 510 595.60</b> — una operación eficiente y bien planificada.
+        </p>
+      </div>
+    </div>
+  </article>
+
+</div><!-- /wrap -->
+
+<!-- =================== TEMA II DIVIDER =================== -->
+<section class="tema-divider" id="transporte" data-screen-label="Tema II — Transporte">
+  <img src="assets/galaxy-ai-s25.jpg" alt="Galaxy S25 Series" />
+  <div class="wrap td-inner">
+    <p class="tema-num reveal in">II</p>
+    <p class="eyebrow reveal in">Tema II</p>
+    <h2 class="h-section reveal in d1" style="max-width:16ch">Modelos de Transporte</h2>
+    <p class="reveal in d2" style="max-width:62ch;color:rgba(255,255,255,.8);font-weight:300;margin-top:18px;font-size:1.1rem;line-height:1.6">
+      Samsung coordina el envío de su smartphone insignia desde <strong style="color:#fff">tres plantas de ensamblaje</strong>
+      hacia <strong style="color:#fff">tres centros de distribución continental</strong>. El reto: cubrir toda la demanda al menor costo de transporte.
+    </p>
+  </div>
+</section>
+
+<!-- =================== TRANSPORTE INTERACTIVO =================== -->
+<section class="section-pad">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Problema de transporte · Oferta = Demanda = 13 500</p>
+      <h2 class="h-section" style="max-width:20ch">Elige un método y observa cómo se asigna la producción.</h2>
+    </div>
+
+    <div class="transport-lab reveal d1" id="transportLab"></div>
+
+  </div>
+</section>
+
+<!-- =================== CONCLUSIÓN =================== -->
+<section class="conclusion section-pad" id="conclusion" data-screen-label="Conclusión">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow" style="color:var(--accent-2)">Conclusión</p>
+      <h2 class="h-section">La Investigación de Operaciones como ventaja competitiva.</h2>
+    </div>
+    <div class="concl-grid reveal d1">
+      <div class="concl-item">
+        <span class="ci-n">01</span>
+        <h4>Inventarios que se ajustan al costo real</h4>
+        <p>Tolerar un déficit planeado o exigir cero faltantes no es una decisión arbitraria: depende de la relación entre los costos de almacenar y de faltar. El modelo encuentra el punto exacto.</p>
+      </div>
+      <div class="concl-item">
+        <span class="ci-n">02</span>
+        <h4>Producción sincronizada con la demanda</h4>
+        <p>Cuando la planta produce y consume a la vez, el lote óptimo equilibra preparación y almacenamiento, evitando tanto el exceso de inventario como las paradas de línea.</p>
+      </div>
+      <div class="concl-item">
+        <span class="ci-n">03</span>
+        <h4>Logística al mínimo costo</h4>
+        <p>Pasar de una solución factible ($234 000) a la óptima ($162 000) representa un <strong style="color:#fff">30% de ahorro</strong> mensual sólo reordenando las rutas de envío.</p>
+      </div>
+      <div class="concl-item">
+        <span class="ci-n">04</span>
+        <h4>Decisiones con respaldo matemático</h4>
+        <p>Cada cifra de esta exposición proviene de un modelo verificable. La I.O. convierte la intuición operativa en estrategia medible para Samsung.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== FOOTER =================== -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-logo"><img src="assets/samsung-logo-white.png" alt="Samsung" /></div>
+    <h3 class="h-prob" style="font-weight:300;max-width:18ch">Gracias por su atención.</h3>
+    <div class="footer-team">
+      <span class="ft-person">Hanna Mariana Bermúdez</span>
+      <span class="ft-person">David Cruz de Alba</span>
+      <span class="ft-person">Christian Graciano Sánchez</span>
+      <span class="ft-person">Daniel Ulises Guzmán Zambrano</span>
+      <span class="ft-person">Angel Maximiliano Nava Chávez</span>
+      <span class="ft-person">Ana Sofía Solís Jiménez</span>
+    </div>
+    <div class="footer-bottom">
+      <span>EQUIPO SAMSUNG · TECH COMPANY</span>
+      <span>Métodos Cuantitativos — Investigación de Operaciones</span>
+    </div>
+  </div>
+</footer>
+
+<!-- tweaks mount -->
+<div id="tweaks-root"></div>
+
+<!-- scripts -->
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="viz.js"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" src="tweaks-app.jsx"></script>
+</body>
+</html>
