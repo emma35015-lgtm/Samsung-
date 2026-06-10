@@ -155,6 +155,41 @@
         <div class="data-token"><div class="dt-k">C₄ · déficit</div><div class="dt-v">$20 <small>/u·año</small></div></div>
       </div>
     </div>
+    <div class="formula-block reveal d1">
+      <div class="fb-title">Formulario · Compra con déficit</div>
+      <div class="fb-grid">
+        <div class="fb-row">
+          <span class="fb-lbl">Q*</span><span class="fb-eq">=</span>
+          <span class="fb-f">√( 2·D·C<sub>2</sub> / C<sub>3</sub> ) · √( (C<sub>3</sub>+C<sub>4</sub>) / C<sub>4</sub> )</span>
+          <span class="fb-d">Cantidad óptima de pedido</span>
+        </div>
+        <div class="fb-row">
+          <span class="fb-lbl">S</span><span class="fb-eq">=</span>
+          <span class="fb-f">Q · C<sub>3</sub> / (C<sub>3</sub> + C<sub>4</sub>)</span>
+          <span class="fb-d">Déficit máximo permitido</span>
+        </div>
+        <div class="fb-row">
+          <span class="fb-lbl">I<sub>M</sub></span><span class="fb-eq">=</span>
+          <span class="fb-f">Q · C<sub>4</sub> / (C<sub>3</sub> + C<sub>4</sub>)</span>
+          <span class="fb-d">Inventario máximo</span>
+        </div>
+        <div class="fb-row">
+          <span class="fb-lbl">N</span><span class="fb-eq">=</span>
+          <span class="fb-f">D / Q</span>
+          <span class="fb-d">Pedidos por año</span>
+        </div>
+        <div class="fb-row">
+          <span class="fb-lbl">T</span><span class="fb-eq">=</span>
+          <span class="fb-f">(Q / D) · 365</span>
+          <span class="fb-d">Días entre pedidos</span>
+        </div>
+        <div class="fb-row fb-highlight">
+          <span class="fb-lbl">CT</span><span class="fb-eq">=</span>
+          <span class="fb-f">D·C<sub>1</sub> + (D/Q)·C<sub>2</sub> + C<sub>3</sub>·I<sub>M</sub><sup>2</sup>/(2Q) + C<sub>4</sub>·S<sup>2</sup>/(2Q)</span>
+          <span class="fb-d">Costo total anual</span>
+        </div>
+      </div>
+    </div>
     <div class="lab reveal d1" data-lab="purchaseShortage"></div>
     <div class="result-card reveal d2">
       <div class="result-figures">
@@ -200,6 +235,36 @@
         <div class="data-token"><div class="dt-k">C₃ · almacenar</div><div class="dt-v">$6 <small>/u·año</small></div></div>
       </div>
     </div>
+    <div class="formula-block reveal d1">
+      <div class="fb-title">Formulario · Compra sin déficit (EOQ clásico)</div>
+      <div class="fb-grid">
+        <div class="fb-row">
+          <span class="fb-lbl">Q*</span><span class="fb-eq">=</span>
+          <span class="fb-f">√( 2·D·C<sub>2</sub> / C<sub>3</sub> )</span>
+          <span class="fb-d">Cantidad óptima de pedido</span>
+        </div>
+        <div class="fb-row">
+          <span class="fb-lbl">Ī</span><span class="fb-eq">=</span>
+          <span class="fb-f">Q / 2</span>
+          <span class="fb-d">Inventario promedio</span>
+        </div>
+        <div class="fb-row">
+          <span class="fb-lbl">N</span><span class="fb-eq">=</span>
+          <span class="fb-f">D / Q</span>
+          <span class="fb-d">Pedidos por año</span>
+        </div>
+        <div class="fb-row">
+          <span class="fb-lbl">T</span><span class="fb-eq">=</span>
+          <span class="fb-f">(Q / D) · 365</span>
+          <span class="fb-d">Días entre pedidos</span>
+        </div>
+        <div class="fb-row fb-highlight">
+          <span class="fb-lbl">CT</span><span class="fb-eq">=</span>
+          <span class="fb-f">D·C<sub>1</sub> + (D/Q)·C<sub>2</sub> + C<sub>3</sub>·Q/2</span>
+          <span class="fb-d">Costo total anual</span>
+        </div>
+      </div>
+    </div>
     <div class="lab reveal d1" data-lab="purchaseNoShortage"></div>
     <div class="result-card reveal d2">
       <div class="result-figures">
@@ -242,6 +307,41 @@
         <div class="data-token"><div class="dt-k">C₄ · déficit</div><div class="dt-v">$25 <small>/u·año</small></div></div>
       </div>
     </div>
+    <div class="formula-block reveal d1">
+      <div class="fb-title">Formulario · Producción con déficit</div>
+      <div class="fb-grid">
+        <div class="fb-row fb-def">
+          <span class="fb-lbl">k</span><span class="fb-eq">=</span>
+          <span class="fb-f">1 − D/R</span>
+          <span class="fb-d">Factor de acumulación neta</span>
+        </div>
+        <div class="fb-row">
+          <span class="fb-lbl">Q*</span><span class="fb-eq">=</span>
+          <span class="fb-f">√(2·D·C<sub>2</sub>/C<sub>3</sub>) · √(1/k) · √((C<sub>3</sub>+C<sub>4</sub>)/C<sub>4</sub>)</span>
+          <span class="fb-d">Lote óptimo de producción</span>
+        </div>
+        <div class="fb-row">
+          <span class="fb-lbl">I<sub>M</sub></span><span class="fb-eq">=</span>
+          <span class="fb-f">Q·k · C<sub>4</sub> / (C<sub>3</sub> + C<sub>4</sub>)</span>
+          <span class="fb-d">Inventario máximo</span>
+        </div>
+        <div class="fb-row">
+          <span class="fb-lbl">S</span><span class="fb-eq">=</span>
+          <span class="fb-f">Q·k · C<sub>3</sub> / (C<sub>3</sub> + C<sub>4</sub>)</span>
+          <span class="fb-d">Unidades agotadas máximas</span>
+        </div>
+        <div class="fb-row">
+          <span class="fb-lbl">T</span><span class="fb-eq">=</span>
+          <span class="fb-f">(Q / D) · 365</span>
+          <span class="fb-d">Días entre corridas</span>
+        </div>
+        <div class="fb-row fb-highlight">
+          <span class="fb-lbl">CT</span><span class="fb-eq">=</span>
+          <span class="fb-f">D·C<sub>1</sub> + (D/Q)·C<sub>2</sub> + C<sub>3</sub>·I<sub>M</sub><sup>2</sup>/(2Qk) + C<sub>4</sub>·S<sup>2</sup>/(2Qk)</span>
+          <span class="fb-d">Costo total anual</span>
+        </div>
+      </div>
+    </div>
     <div class="lab reveal d1" data-lab="prodShortage"></div>
     <div class="result-card reveal d2">
       <div class="result-figures">
@@ -280,6 +380,36 @@
         <div class="data-token"><div class="dt-k">C₁ · unitario</div><div class="dt-v">$55</div></div>
         <div class="data-token"><div class="dt-k">C₂ · preparar</div><div class="dt-v">$5 280</div></div>
         <div class="data-token"><div class="dt-k">C₃ · almacenar</div><div class="dt-v">$210 <small>/u·año</small></div></div>
+      </div>
+    </div>
+    <div class="formula-block reveal d1">
+      <div class="fb-title">Formulario · Producción sin déficit (EPQ)</div>
+      <div class="fb-grid">
+        <div class="fb-row fb-def">
+          <span class="fb-lbl">k</span><span class="fb-eq">=</span>
+          <span class="fb-f">1 − D/R</span>
+          <span class="fb-d">Factor de acumulación neta</span>
+        </div>
+        <div class="fb-row">
+          <span class="fb-lbl">Q*</span><span class="fb-eq">=</span>
+          <span class="fb-f">√( 2·D·C<sub>2</sub> / (C<sub>3</sub>·k) )</span>
+          <span class="fb-d">Lote óptimo de producción</span>
+        </div>
+        <div class="fb-row">
+          <span class="fb-lbl">I<sub>M</sub></span><span class="fb-eq">=</span>
+          <span class="fb-f">Q · k</span>
+          <span class="fb-d">Inventario máximo</span>
+        </div>
+        <div class="fb-row">
+          <span class="fb-lbl">T</span><span class="fb-eq">=</span>
+          <span class="fb-f">(Q / D) · 365</span>
+          <span class="fb-d">Días entre corridas</span>
+        </div>
+        <div class="fb-row fb-highlight">
+          <span class="fb-lbl">CT</span><span class="fb-eq">=</span>
+          <span class="fb-f">D·C<sub>1</sub> + (D/Q)·C<sub>2</sub> + C<sub>3</sub>·Q·k/2</span>
+          <span class="fb-d">Costo total anual</span>
+        </div>
       </div>
     </div>
     <div class="lab reveal d1" data-lab="prodNoShortage"></div>
@@ -323,6 +453,32 @@
     <div class="sec-head reveal">
       <p class="eyebrow">Problema de transporte · Oferta = Demanda = 13 500</p>
       <h2 class="h-section" style="max-width:20ch">Elige un método y observa cómo se asigna la producción.</h2>
+    </div>
+
+    <div class="formula-block reveal d1" style="margin-bottom:28px">
+      <div class="fb-title">Modelo de Programación Lineal · Transporte</div>
+      <div class="fb-grid">
+        <div class="fb-row fb-highlight">
+          <span class="fb-lbl" style="font-size:.78rem">Min</span><span class="fb-eq"></span>
+          <span class="fb-f">CT = Σ<sub>i</sub> Σ<sub>j</sub> c<sub>ij</sub> · x<sub>ij</sub></span>
+          <span class="fb-d">Función objetivo</span>
+        </div>
+        <div class="fb-row">
+          <span class="fb-lbl" style="font-size:.78rem">s.a.</span><span class="fb-eq"></span>
+          <span class="fb-f">Σ<sub>j</sub> x<sub>ij</sub> = s<sub>i</sub> &nbsp; ∀ i</span>
+          <span class="fb-d">Restricciones de oferta</span>
+        </div>
+        <div class="fb-row">
+          <span class="fb-lbl"></span><span class="fb-eq"></span>
+          <span class="fb-f">Σ<sub>i</sub> x<sub>ij</sub> = d<sub>j</sub> &nbsp; ∀ j</span>
+          <span class="fb-d">Restricciones de demanda</span>
+        </div>
+        <div class="fb-row">
+          <span class="fb-lbl"></span><span class="fb-eq"></span>
+          <span class="fb-f">x<sub>ij</sub> ≥ 0 &nbsp; ∀ i, j</span>
+          <span class="fb-d">No negatividad</span>
+        </div>
+      </div>
     </div>
 
     <div class="transport-lab reveal d1" id="transportLab"></div>
